@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regular Expression Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Regular Expression Helper</h1>
+    <div class="input-group">
+      <label for="regexp">Regular Expression:</label>
+      <input type="text" id="regexp" placeholder="Enter your regex pattern">
+    </div>
+    <div class="input-group">
+      <label for="flags">Flags:</label>
+      <select id="flags">
+        <option value="">None</option>
+        <option value="g">Global (g)</option>
+        <option value="i">Case Insensitive (i)</option>
+        <option value="m">Multiline (m)</option>
+        <option value="y">Sticky (y)</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="string">String to Test:</label>
+      <textarea id="string" placeholder="Enter your string"></textarea>
+    </div>
+    <div class="input-group">
+      <label for="function">Function:</label>
+      <select id="function">
+        <option value="test">Test</option>
+        <option value="search">Search</option>
+        <option value="match">Match</option>
+      </select>
+    </div>
+    <button id="run">Run</button>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
