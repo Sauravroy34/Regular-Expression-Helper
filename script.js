@@ -24,7 +24,7 @@ document.getElementById('run').addEventListener('click', () => {
       if (func === 'test') {
         result = regex.test(stringInput);
         outputDiv.innerHTML = `Test result: ${result}`;
-      } else if (func === 'search') {
+      } if (func === 'search') {
         const index = stringInput.search(regex);
         if (index !== -1) {
           result = `Pattern found at index: ${index}`;
@@ -32,12 +32,10 @@ document.getElementById('run').addEventListener('click', () => {
           result = 'No match found';
         }
         outputDiv.innerHTML = `${result}`;
-      } else if (func === 'match') {
+      } if (func === 'match') {
         const matches = stringInput.match(regex);
         if (matches) {
-          result = matches.join(', ');
-          const highlighted = stringInput.replace(regex, match => `${match}`);
-          outputDiv.innerHTML = `${result} is in ${highlighted}`;
+          outputDiv.innerHTML = `${matches} is in [${stringInput}]`;
         } else {
           outputDiv.innerHTML = 'No matches found';
         }
@@ -46,4 +44,5 @@ document.getElementById('run').addEventListener('click', () => {
       outputDiv.innerHTML = `Error in regular expression: ${e.message}`;
     }
   });
+
   

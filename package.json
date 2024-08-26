@@ -1,0 +1,30 @@
+{
+  "name": "regular-expression-helper",
+  "version": "1.0.0",
+  "description": "Enter your expression get your results!",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sauravroy34/Regular-Expression-Helper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sauravroy34/Regular-Expression-Helper/issues"
+  },
+  "homepage": "https://github.com/Sauravroy34/Regular-Expression-Helper#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.0"
+  }
+}
