@@ -56,7 +56,7 @@ describe('processRegExp with DOM', () => {
       { regexInput: 'This', flags: 'g', stringInput: 'This is a Test string', func: 'search', expected: 'Pattern found at index: 0' },
       { regexInput: 'is', flags: 'g', stringInput: 'This is a Test string', func: 'match', expected: 'is,is is in [This is a Test string]' },
   ])(
-      'processes $func function with regex="$regexInput" and flags="$flags"',
+      'testing',
       ({ regexInput, flags, stringInput, func, expected }) => {
           document.getElementById('regexp').value = regexInput;
           document.getElementById('flags').value = flags;
